@@ -9,7 +9,7 @@ phases:
      - echo "pre_build step"
  build:
    commands:
-     - aws s3 sync --delete . s3://schoos.io
+     - aws s3 sync . s3://schoos.io
  post_build:
    commands:
      - echo "post_build step"
